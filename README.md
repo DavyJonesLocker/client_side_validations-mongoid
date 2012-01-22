@@ -2,7 +2,7 @@
 
 [![Build Status](http://travis-ci.org/dockyard/client_side_validations-mongoid.png)](http://travis-ci.org/dockyard/client_side_validations-mongoid)
 
-Mongoid plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
+[Mongoid](https://github.com/mongoid/mongoid) plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
 
 ## Installation ##
 
