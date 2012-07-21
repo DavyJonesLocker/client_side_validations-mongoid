@@ -13,12 +13,13 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = ClientSideValidations::Mongoid::VERSION
 
-  gem.add_dependency 'client_side_validations', '~> 3.2.0.beta.1'
+  gem.add_dependency 'client_side_validations', '~> 3.2.0.beta.6'
   gem.add_dependency 'mongoid', '~> 2.4.0'
 
   gem.add_development_dependency 'bson_ext'
   gem.add_development_dependency 'rails', '~> 3.2.0'
   gem.add_development_dependency 'mocha'
+  gem.add_development_dependency 'm'
 
   # For QUnit testing
   gem.add_development_dependency 'sinatra', '~> 1.0'
