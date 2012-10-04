@@ -4,7 +4,10 @@ Bundler.setup
 require 'test/unit'
 require 'mocha'
 if RUBY_VERSION >= '1.9.3'
-  require 'debugger'
+  begin
+    require 'debugger'
+  rescue LoadError
+  end
 end
 
 module Rails
