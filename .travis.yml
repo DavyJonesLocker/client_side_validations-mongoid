@@ -4,10 +4,9 @@ rvm:
   - 1.9.3
   - ree
   - jruby
-  - rbx-2.0
+  - rbx-18mode
+  - rbx-19mode
 gemfile:
   - gemfiles/Gemfile
-before_install:
-  - gem update --system
-  - gem install bundler --pre
-
+services:
+  - mongodb
