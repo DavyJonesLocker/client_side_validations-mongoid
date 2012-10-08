@@ -1,7 +1,0 @@
-source 'http://rubygems.org'
-
-gem 'rails', '~> 3.2.0'
-gem 'bson_ext'
-gem 'mongoid', '~> 3.0.0'
-gem 'client_side_validations', '~> 3.2.0.rc.1'
-gem 'mocha'
