@@ -19,5 +19,3 @@ module Rails
     false
   end
 end
-
-module ClientSideValidations; end
