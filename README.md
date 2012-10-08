@@ -1,6 +1,8 @@
 # ClientSideValidations-Mongoid #
 
-[![Build Status](http://travis-ci.org/dockyard/client_side_validations-mongoid.png)](http://travis-ci.org/dockyard/client_side_validations-mongoid)
+[![Build Status](https://secure.travis-ci.org/dockyard/client_side_valdiations-mongoid.png?branch=2-4-stable)](http://travis-ci.org/dockyard/client_side_valdiations-mongoid)
+[![Dependency Status](https://gemnasium.com/dockyard/client_side_valdiations-mongoid.png?travis)](https://gemnasium.com/dockyard/client_side_valdiations-mongoid)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dockyard/client_side_valdiations-mongoid)
 
 [Mongoid](https://github.com/mongoid/mongoid) plugin for [ClientSideValidations](https://github.com/bcardarella/client_side_validations)
 
