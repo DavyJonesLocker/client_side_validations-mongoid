@@ -1,3 +1,5 @@
+module ClientSideValidations; end
+
 require 'client_side_validations/active_model'
 require 'client_side_validations/middleware'
 require 'client_side_validations/mongoid/middleware'
