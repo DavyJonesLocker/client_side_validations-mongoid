@@ -19,7 +19,7 @@ gem 'client_side_validations-mongoid'
 Order matters here. `Mongoid` and `ClientSideValidations` need to be
 required **before** `ClientSideValidations-Mongoid`.
 
-[Follow the remaining installation instructions for ClientSideValidations](https://github.com/bcardarella/client_side_validations/README.markdown)
+[Follow the remaining installation instructions for ClientSideValidations](https://github.com/bcardarella/client_side_validations/tree/3-2-stable/README.md)
 
 ## Authors ##
 
