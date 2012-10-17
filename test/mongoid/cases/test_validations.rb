@@ -1,6 +1,6 @@
 require 'mongoid/cases/test_base'
 
-class Mongoid::UniqunessValidatorTest < ClientSideValidations::MongoidTestBase
+class Mongoid::ValidationsTest < ClientSideValidations::MongoidTestBase
   class ::Book3 < Book
     validates :author_name, :presence => true
   end
@@ -10,10 +10,10 @@ class Mongoid::UniqunessValidatorTest < ClientSideValidations::MongoidTestBase
 
     expected_hash = {
       :author_email => {
-        :uniqueness=> [{:message=>"is already taken"}]
-      }, :author_name=> {
-        :uniqueness => [{:message=>"is already taken"}],
-        :presence => [{:message=>"can't be blank"}]
+        :uniqueness => [{:message => "is already taken"}]
+      }, :author_name => {
+        :uniqueness => [{:message => "is already taken"}],
+        :presence => [{:message => "can't be blank"}]
       }
     }
 
