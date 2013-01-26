@@ -7,6 +7,11 @@ class Mongoid::UniqunessValidatorTest < ClientSideValidations::MongoidTestBase
     assert_equal expected_hash, UniquenessValidator.new(:attributes => [:name]).client_side_hash(@book, :age)
   end
 
+  def test_uniqueness_client_side_hash_allowing_blank
+    expected_hash = { :message => "is already taken", :allow_blank => true }
+    assert_equal expected_hash, UniquenessValidator.new(:attributes => [:author_name], :allow_blank => true).client_side_hash(@book, :author_name)
+  end
+
   def test_uniqueness_client_side_hash_with_custom_message
     expected_hash = { :message => "is not available" }
     assert_equal expected_hash, UniquenessValidator.new(:attributes => [:name], :message => "is not available").client_side_hash(@book, :age)
