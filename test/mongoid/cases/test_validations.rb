@@ -10,9 +10,9 @@ class Mongoid::ValidationsTest < ClientSideValidations::MongoidTestBase
 
     expected_hash = {
       :author_email => {
-        :uniqueness => [{:message => "is already taken"}]
+        :uniqueness => [{:message => "is already taken", :class => 'book'}]
       }, :author_name => {
-        :uniqueness => [{:message => "is already taken"}],
+        :uniqueness => [{:message => "is already taken", :class => 'book'}],
         :presence => [{:message => "can't be blank"}]
       }
     }
