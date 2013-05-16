@@ -8,10 +8,10 @@ class Book
   validates :author_email, :author_name, :uniqueness => true
 end
 
-class Book4 < Book; end
+class BookInherit < Book; end
 
 module MongoidTestModule
-  class Book2
+  class BookNested
     include Mongoid::Document
 
     field :age, :type => Integer
