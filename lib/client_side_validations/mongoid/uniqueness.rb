@@ -12,7 +12,9 @@ module ClientSideValidations::Mongoid
         end
       end
 
-      unless model.class.name.demodulize == model.class.name
+      if klass && klass != model.class
+        hash[:class] = klass.name.underscore
+      elsif model.class.name.demodulize != model.class.name
         hash[:class] = model.class.name.underscore
       end
 

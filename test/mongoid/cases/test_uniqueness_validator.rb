@@ -46,9 +46,17 @@ class Mongoid::UniqunessValidatorTest < ClientSideValidations::MongoidTestBase
   end
 
   def test_uniqueness_client_side_hash_when_nested_module
-    @book = MongoidTestModule::Book2.new
-    expected_hash = { :message => "is already taken", :class => 'mongoid_test_module/book2' }
+    @book = MongoidTestModule::BookNested.new
+    expected_hash = { :message => "is already taken", :class => 'mongoid_test_module/book_nested' }
     assert_equal expected_hash, UniquenessValidator.new(:attributes => [:name]).client_side_hash(@book, :age)
+  end
+
+  def test_uniqueness_client_side_hash_when_inherit
+    @book = BookInherit.new
+    expected_hash = { :message => "is already taken", :class => 'book' }
+    validator = UniquenessValidator.new(:attributes => [:name])
+    validator.setup(Book)
+    assert_equal expected_hash, validator.client_side_hash(@book, :age)
   end
 end
 
