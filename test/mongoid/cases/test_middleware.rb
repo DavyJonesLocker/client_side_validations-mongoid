@@ -20,7 +20,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_resource_exists
-    Book.create(:author_email => 'book@test.com')
+    Book.create(author_email: 'book@test.com')
     get '/validators/uniqueness', { 'book[author_email]' => 'book@test.com' }
 
     assert_equal 'false', last_response.body
@@ -35,7 +35,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_id_is_given
-    book = Book.create(:author_email => 'book@test.com')
+    book = Book.create(author_email: 'book@test.com')
     get '/validators/uniqueness', { 'book[author_email]' => 'book@test.com', 'id' => book.id }
 
     assert_equal 'true', last_response.body
@@ -43,7 +43,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_scope_is_given
-    Book.create(:author_email => 'book@test.com', :age => 25)
+    Book.create(author_email: 'book@test.com', age: 25)
     get '/validators/uniqueness', { 'book[author_email]' => 'book@test.com', 'scope' => { 'age' => 30 } }
 
     assert_equal 'true', last_response.body
@@ -51,7 +51,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_multiple_scopes_are_given
-    Book.create(:author_email => 'book@test.com', :age => 30, :author_name => 'Brian')
+    Book.create(author_email: 'book@test.com', age: 30, author_name: 'Brian')
     get '/validators/uniqueness', { 'book[author_email]' => 'book@test.com', 'scope' => { 'age' => 30, 'author_name' => 'Robert' } }
 
     assert_equal 'true', last_response.body
@@ -59,7 +59,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_case_insensitive
-    Book.create(:author_name => 'Brian')
+    Book.create(author_name: 'Brian')
     get '/validators/uniqueness', { 'book[author_name]' => 'BRIAN', 'case_sensitive' => false }
 
     assert_equal 'false', last_response.body
@@ -67,7 +67,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   end
 
   def test_uniqueness_when_resource_is_a_nested_module
-    MongoidTestModule::Book2.create(:author_email => 'book@test.com')
+    MongoidTestModule::Book2.create(author_email: 'book@test.com')
     get '/validators/uniqueness', { 'mongoid_test_module/book2[author_email]' => 'book@test.com' }
 
     assert_equal 'false', last_response.body

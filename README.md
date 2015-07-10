@@ -25,10 +25,10 @@ required **before** `ClientSideValidations-Mongoid`.
 
 ## Usage ##
 
-The usage is the same as `ClientSideValidations`, just pass `:validate => true` to the form builder
+The usage is the same as `ClientSideValidations`, just pass `validate: true` to the form builder
 
 ```ruby
-<%= mongoid_for @book, :validate => true do |book| %>
+<%= mongoid_for @book, validate: true do |book| %>
   <%= book.input :name %>
 <% end %>
 ```
@@ -36,7 +36,7 @@ The usage is the same as `ClientSideValidations`, just pass `:validate => true` 
 Per-input options are done with `:validate`
 
 ```ruby
-<%= book.input :name, :validate => { :presence => true, :uniqueness => false }
+<%= book.input :name, validate: { presence: true, uniqueness: false }
 ```
 
 ## Authors ##
