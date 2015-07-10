@@ -1,23 +1,37 @@
+# Configure Rails Environment
+ENV['RAILS_ENV'] = 'test'
+
+if ENV['CI']
+  require 'coveralls'
+  Coveralls.wear!
+else
+  require 'simplecov'
+  SimpleCov.start 'rails'
+end
+
 require 'rubygems'
-require 'bundler'
-Bundler.setup
-require 'test/unit'
-require 'mocha'
-if RUBY_VERSION >= '1.9.3'
-  begin
-    require 'debugger'
-  rescue LoadError
+require 'bundler/setup'
+require 'minitest/autorun'
+if RUBY_VERSION >= '2.0.0'
+  require 'byebug'
+else
+  require 'debugger'
+end
+require 'mocha/setup'
+require 'rails'
+
+# MiniTest 4 support
+MiniTest::Test = MiniTest::Unit::TestCase unless defined?(MiniTest::Test)
+
+module TestApp
+  class Application < Rails::Application
+    config.root = File.dirname(__FILE__)
+    config.active_support.deprecation = :log
+    config.active_support.test_order = :random
+    config.eager_load = false
+    config.secret_key_base = '42'
+    I18n.enforce_available_locales = true
   end
 end
 
-require 'client_side_validations/config'
-
-module Rails
-  def self.env
-    self
-  end
-
-  def self.development?
-    false
-  end
-end
+module ClientSideValidations; end

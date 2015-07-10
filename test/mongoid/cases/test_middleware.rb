@@ -1,7 +1,7 @@
 require 'middleware_helper'
 require 'mongoid/cases/helper'
 
-class ClientSideValidationsMongoidMiddlewareTest < Test::Unit::TestCase
+class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   include Rack::Test::Methods
 
   def setup
@@ -74,4 +74,3 @@ class ClientSideValidationsMongoidMiddlewareTest < Test::Unit::TestCase
     assert last_response.ok?
   end
 end
-

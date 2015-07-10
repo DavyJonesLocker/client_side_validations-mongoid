@@ -1,6 +1,6 @@
 require 'mongoid/cases/test_base'
 
-class Mongoid::ValidationsTest < ClientSideValidations::MongoidTestBase
+class Mongoid::ValidatableTest < ClientSideValidations::MongoidTestBase
   class ::Book3 < Book
     validates :author_name, :presence => true
   end

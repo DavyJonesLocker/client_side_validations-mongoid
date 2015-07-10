@@ -13,5 +13,3 @@ class Mongoid::PresenceValidatorTest < ClientSideValidations::MongoidTestBase
   end
 
 end
-
-

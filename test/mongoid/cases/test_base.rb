@@ -1,7 +1,7 @@
 require 'mongoid/cases/helper'
 
-class ClientSideValidations::MongoidTestBase < Test::Unit::TestCase
-  include Mongoid::Validations
+class ClientSideValidations::MongoidTestBase < MiniTest::Test
+  include Mongoid::Validatable
 
   def setup
     @book = Book.new
@@ -12,4 +12,3 @@ class ClientSideValidations::MongoidTestBase < Test::Unit::TestCase
     assert_equal expected_hash, UniquenessValidator.new(:attributes => [:name]).client_side_hash(@book, :age)
   end
 end
-

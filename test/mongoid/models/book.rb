@@ -11,4 +11,3 @@ end
 module MongoidTestModule
   class Book2 < Book; end
 end
-

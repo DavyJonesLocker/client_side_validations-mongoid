@@ -22,4 +22,3 @@ module ClientSideValidations::Mongoid
     end
   end
 end
-

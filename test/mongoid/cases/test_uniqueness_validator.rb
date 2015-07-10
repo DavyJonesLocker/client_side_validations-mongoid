@@ -51,4 +51,3 @@ class Mongoid::UniqunessValidatorTest < ClientSideValidations::MongoidTestBase
     assert_equal expected_hash, UniquenessValidator.new(:attributes => [:name]).client_side_hash(@book, :age)
   end
 end
-

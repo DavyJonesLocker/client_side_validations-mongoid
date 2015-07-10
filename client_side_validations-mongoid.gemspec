@@ -1,23 +1,33 @@
 # -*- encoding: utf-8 -*-
 require File.expand_path('../lib/client_side_validations/mongoid/version', __FILE__)
 
-Gem::Specification.new do |gem|
-  gem.authors       = ["Brian Cardarella"]
-  gem.email         = ["bcardarella@gmail.com"]
-  gem.description   = %q{Mongoid Plugin for ClientSideValidaitons}
-  gem.summary       = %q{Mongoid Plugin for ClientSideValidations}
-  gem.homepage      = 'https://github.com/dockyard/client_side_validations-mongoid'
+Gem::Specification.new do |s|
+  s.name        = 'client_side_validations-mongoid'
+  s.version     = ClientSideValidations::Mongoid::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Brian Cardarella"]
+  s.email       = ["bcardarella@gmail.com"]
+  s.homepage    = 'https://github.com/DavyJonesLocker/client_side_validations-mongoid'
+  s.summary     = %q{Mongoid Plugin for ClientSideValidations}
+  s.description = %q{Mongoid Plugin for ClientSideValidations}
+  s.license     = 'MIT'
 
-  gem.files         = `git ls-files -- {lib/*,vendor/*,*.gemspec}`.split("\n")
-  gem.name          = 'client_side_validations-mongoid'
-  gem.require_paths = ['lib']
-  gem.version       = ClientSideValidations::Mongoid::VERSION
+  s.files         = `git ls-files -- {lib/*,vendor/*,*.gemspec}`.split("\n")
+  s.require_paths = ['lib']
 
-  gem.add_dependency 'client_side_validations', '~> 3.2.0'
-  gem.add_dependency 'mongoid', '~> 3.1.0'
+  s.add_dependency 'client_side_validations', '~> 4.2.0'
+  s.add_dependency 'mongoid', '~> 4.0'
 
-  gem.add_development_dependency 'bson_ext'
-  gem.add_development_dependency 'rails', '~> 3.2.0'
-  gem.add_development_dependency 'mocha'
-  gem.add_development_dependency 'm'
+  s.add_development_dependency 'appraisal', '~> 2.0'
+  s.add_development_dependency 'coveralls', '~> 0.8.1'
+  s.add_development_dependency 'm', '~> 1.3'
+  s.add_development_dependency 'minitest', '>= 4.7.5', '< 6.0.0'
+  s.add_development_dependency 'mocha', '~> 1.1'
+  s.add_development_dependency 'simplecov', '~> 0.10.0'
+
+  if Gem::Version.new(RUBY_VERSION.dup) >= Gem::Version.new('2.0')
+    s.add_development_dependency 'byebug', '~> 5.0'
+  else
+    s.add_development_dependency 'debugger', '~> 1.6'
+  end
 end
