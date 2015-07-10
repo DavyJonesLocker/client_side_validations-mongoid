@@ -5,14 +5,8 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
   include Rack::Test::Methods
 
   def setup
-    # I've been burned enough times with not having the db clear
-    # I should probably use a db cleaner instead of this
-    Book.delete_all
+    DatabaseCleaner.clean
     ClientSideValidations::Config.stubs(:disabled_validators).returns([])
-  end
-
-  def teardown
-    Book.delete_all
   end
 
   def app

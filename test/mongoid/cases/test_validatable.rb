@@ -1,6 +1,10 @@
 require 'mongoid/cases/test_base'
 
 class Mongoid::ValidatableTest < ClientSideValidations::MongoidTestBase
+  def setup
+    ClientSideValidations::Config.stubs(:disabled_validators).returns([])
+  end
+
   class ::Book3 < Book
     validates :author_name, presence: true
   end

@@ -20,6 +20,8 @@ end
 require 'mocha/setup'
 require 'rails'
 
+require 'database_cleaner'
+
 # MiniTest 4 support
 MiniTest::Test = MiniTest::Unit::TestCase unless defined?(MiniTest::Test)
 
