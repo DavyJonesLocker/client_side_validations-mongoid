@@ -8,6 +8,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
     # I've been burned enough times with not having the db clear
     # I should probably use a db cleaner instead of this
     Book.delete_all
+    ClientSideValidations::Config.stubs(:disabled_validators).returns([])
   end
 
   def teardown
