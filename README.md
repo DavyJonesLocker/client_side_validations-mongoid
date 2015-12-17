@@ -28,7 +28,7 @@ required **before** `ClientSideValidations-Mongoid`.
 The usage is the same as `ClientSideValidations`, just pass `validate: true` to the form builder
 
 ```ruby
-<%= mongoid_for @book, validate: true do |book| %>
+<%= form_for @book, validate: true do |book| %>
   <%= book.input :name %>
 <% end %>
 ```

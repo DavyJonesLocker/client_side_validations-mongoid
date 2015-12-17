@@ -1,10 +1,12 @@
 require 'mongoid/cases/helper'
 
-class ClientSideValidations::MongoidTestBase < MiniTest::Test
-  include Mongoid::Validatable
+module ClientSideValidations
+  class MongoidTestBase < MiniTest::Test
+    include ::Mongoid::Validatable
 
-  def setup
-    DatabaseCleaner.clean
-    @book = Book.new
+    def setup
+      DatabaseCleaner.clean
+      @book = Book.new
+    end
   end
 end

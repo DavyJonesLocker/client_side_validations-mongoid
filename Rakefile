@@ -1,12 +1,15 @@
 require 'bundler'
 Bundler::GemHelper.install_tasks
+require 'rubocop/rake_task'
 
-multitask default: 'test:ruby'
+RuboCop::RakeTask.new
+
+task default: [:rubocop, 'test:ruby']
 
 require 'rake/testtask'
 namespace :test do
   desc %(Run all tests)
-  multitask all: ['test:ruby', 'test:js']
+  task all: [:rubocop, 'test:ruby']
 
   desc %(Test Ruby code)
   Rake::TestTask.new(:ruby) do |test|
@@ -14,4 +17,3 @@ namespace :test do
     test.test_files = Dir.glob("#{File.dirname(__FILE__)}/test/**/test_*.rb").sort
   end
 end
-

@@ -2,7 +2,7 @@
 
 source "http://rubygems.org"
 
-gem "client_side_validations", :github => "DavyJonesLocker/client_side_validations"
+gem "client_side_validations", :github => "DavyJonesLocker/client_side_validations", :branch => "rubocop"
 gem "rails", "~> 4.1.0"
 
 gemspec :path => "../"
