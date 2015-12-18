@@ -1,7 +1,6 @@
 test:
-  sessions:
-    default:
-      hosts:
-        - localhost:27017
-      database: client_side_validations-mongoid-development
-  options:
+ clients:
+   default:
+     database: client_side_validations-mongoid-development
+     hosts:
+       - localhost:27017

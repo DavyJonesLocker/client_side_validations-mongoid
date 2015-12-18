@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'client_side_validations', '~> 4.2.0'
-  spec.add_dependency 'mongoid', '~> 4.0'
+  spec.add_dependency 'mongoid', '~> 5.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.1'
   spec.add_development_dependency 'coveralls', '~> 0.8.10'
