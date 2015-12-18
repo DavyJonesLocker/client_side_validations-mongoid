@@ -1,0 +1,38 @@
+AllCops:
+  Exclude:
+    - 'vendor/bundle/**/*'
+  RunRailsCops: true
+
+Metrics/AbcSize:
+  Max: 34.26 # TODO: Lower to 15
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/CyclomaticComplexity:
+  Max: 7 # TODO: Lower to 6
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 14
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'test/**/*'
+
+Style/ClassVars:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/SpaceAroundOperators:
+  MultiSpaceAllowedForOperators:
+    - '='
+    - '=>'
+    - '||='

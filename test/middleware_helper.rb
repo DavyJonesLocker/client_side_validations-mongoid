@@ -3,12 +3,14 @@ require 'action_controller'
 require 'action_controller/railtie'
 require 'rails'
 
-# Pulled from railties/test/abstract_unit in Rails 3.1
 module TestApp
   class Application < Rails::Application
     config.root = File.dirname(__FILE__)
     config.active_support.deprecation = :log
-    config.logger = Logger.new(STDOUT)
+    config.active_support.test_order = :random
+    config.eager_load = false
+    config.secret_key_base = '42'
+    I18n.enforce_available_locales = true
   end
 end
 
@@ -16,4 +18,3 @@ require 'client_side_validations/middleware'
 require 'client_side_validations/engine'
 
 TestApp::Application.initialize!
-

@@ -1,23 +1,30 @@
+# Configure Rails Environment
+ENV['RAILS_ENV'] = 'test'
+
+if ENV['CI']
+  require 'coveralls'
+  Coveralls.wear!
+end
+
+require 'simplecov'
+SimpleCov.start 'rails' do
+  add_filter %w(version.rb)
+end
+
 require 'rubygems'
-require 'bundler'
-Bundler.setup
-require 'test/unit'
-require 'mocha'
-if RUBY_VERSION >= '1.9.3'
-  begin
-    require 'debugger'
-  rescue LoadError
-  end
+require 'bundler/setup'
+require 'minitest/autorun'
+if RUBY_VERSION >= '2.0.0'
+  require 'byebug'
+else
+  require 'debugger'
 end
+require 'mocha/setup'
+require 'rails'
 
-require 'client_side_validations/config'
+require 'database_cleaner'
 
-module Rails
-  def self.env
-    self
-  end
+# MiniTest 4 support
+MiniTest::Test = MiniTest::Unit::TestCase unless defined?(MiniTest::Test)
 
-  def self.development?
-    false
-  end
-end
+module ClientSideValidations; end
