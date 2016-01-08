@@ -1,5 +1,5 @@
 test:
- clients:
+ sessions:
    default:
      database: client_side_validations-mongoid-development
      hosts:
