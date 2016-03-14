@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z -- {README.md,lib}`.split("\x0")
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'client_side_validations', '~> 4.2.2'
+  spec.add_dependency 'client_side_validations', '~> 4.2.3'
   spec.add_dependency 'mongoid', '~> 5.1'
 
   spec.add_development_dependency 'appraisal', '~> 2.1'
