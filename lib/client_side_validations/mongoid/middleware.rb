@@ -18,7 +18,7 @@ module ClientSideValidations
           criteria = criteria.where(scope_key => scope_value)
         end
 
-        !criteria.exists?
+        criteria.empty?
       end
     end
   end
