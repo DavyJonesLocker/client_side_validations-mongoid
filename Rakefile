@@ -15,5 +15,6 @@ namespace :test do
   Rake::TestTask.new(:ruby) do |test|
     test.libs << 'lib' << 'test'
     test.test_files = Dir.glob("#{File.dirname(__FILE__)}/test/**/test_*.rb").sort
+    test.warning = false
   end
 end
