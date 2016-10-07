@@ -53,8 +53,8 @@ This gem follows [Semantic Versioning](http://semver.org)
 
 Major and minor version numbers will follow `mongoid`'s major and
 minor version numbers. For example,
-`client_side_validations-mongoid-5.1.0` will be compatible up to
-`~> mongoid-5.1`
+`client_side_validations-mongoid-6.0.0` will be compatible up to
+`~> mongoid-6.0`
 
 ## Want to help? ##
 

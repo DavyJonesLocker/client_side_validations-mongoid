@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z -- {README.md,lib}`.split("\x0")
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'client_side_validations', '~> 4.2.7'
-  spec.add_dependency 'mongoid', '~> 5.1'
+  spec.add_dependency 'client_side_validations', '~> 5.0.0'
+  spec.add_dependency 'mongoid', '~> 6.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.1'
   spec.add_development_dependency 'byebug', '~> 9.0'
