@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'm', '~> 1.5'
   spec.add_development_dependency 'minitest', '>= 4.7.5', '< 6.0.0'
   spec.add_development_dependency 'mocha', '~> 1.1'
-  spec.add_development_dependency 'rake', '~> 11.2'
-  spec.add_development_dependency 'rubocop', '~> 0.42.0'
+  spec.add_development_dependency 'rake', '~> 11.3'
+  spec.add_development_dependency 'rubocop', '~> 0.43.0'
   spec.add_development_dependency 'simplecov', '~> 0.12.0'
 end
