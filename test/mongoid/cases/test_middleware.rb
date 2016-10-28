@@ -14,6 +14,7 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
     ClientSideValidations::Middleware::Validators.new(app)
   end
 
+  # rubocop:disable Rails/HttpPositionalArguments
   def test_uniqueness_when_resource_exists
     Book.create(author_email: 'book@test.com')
     get '/validators/uniqueness', 'book[author_email]' => 'book@test.com'
@@ -68,4 +69,5 @@ class ClientSideValidationsMongoidMiddlewareTest < MiniTest::Test
     assert_equal 'false', last_response.body
     assert last_response.ok?
   end
+  # rubocop:enable Rails/HttpPositionalArguments
 end
