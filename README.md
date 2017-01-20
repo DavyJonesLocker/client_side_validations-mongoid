@@ -51,11 +51,6 @@ Per-input options are done with `:validate`
 
 This gem follows [Semantic Versioning](http://semver.org)
 
-Major and minor version numbers will follow `mongoid`'s major and
-minor version numbers. For example,
-`client_side_validations-mongoid-6.0.0` will be compatible up to
-`~> mongoid-6.0`
-
 ## Want to help? ##
 
 Please do! We are always looking to improve this gem. Please see our
@@ -64,7 +59,7 @@ on how to properly submit issues and pull requests.
 
 ## Legal ##
 
-[DockYard](https://dockyard.com/), LLC &copy; 2012-2016
+[DockYard](https://dockyard.com/), LLC &copy; 2012-2017
 
 [@dockyard](https://twitter.com/dockyard)
 
