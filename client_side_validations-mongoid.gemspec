@@ -16,20 +16,20 @@ Gem::Specification.new do |spec|
 
   spec.platform    = Gem::Platform::RUBY
 
-  spec.files         = `git ls-files -z -- {README.md,lib}`.split("\x0")
+  spec.files         = `git ls-files -z -- {CHANGELOG.md,README.md,lib}`.split("\x0")
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'client_side_validations', '~> 4.2.7'
-  spec.add_dependency 'mongoid', '~> 5.1'
+  spec.add_dependency 'client_side_validations', '~> 6.0'
+  spec.add_dependency 'mongoid', '~> 6.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.1'
   spec.add_development_dependency 'byebug', '~> 9.0'
-  spec.add_development_dependency 'coveralls', '~> 0.8.15'
+  spec.add_development_dependency 'coveralls', '~> 0.8.18'
   spec.add_development_dependency 'database_cleaner', '~> 1.5'
   spec.add_development_dependency 'm', '~> 1.5'
   spec.add_development_dependency 'minitest', '>= 4.7.5', '< 6.0.0'
   spec.add_development_dependency 'mocha', '~> 1.2'
-  spec.add_development_dependency 'rake', '~> 11.3'
-  spec.add_development_dependency 'rubocop', '~> 0.44.1'
+  spec.add_development_dependency 'rake', '~> 12.0'
+  spec.add_development_dependency 'rubocop', '~> 0.47.1'
   spec.add_development_dependency 'simplecov', '~> 0.12.0'
 end

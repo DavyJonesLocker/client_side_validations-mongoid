@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 module ClientSideValidations
   module Mongoid
-    VERSION = '5.1.1'.freeze
+    VERSION = '7.0.0'.freeze
   end
 end
