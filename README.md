@@ -6,7 +6,7 @@
 [![Code Climate](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/badges/gpa.svg)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid)
 [![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=master)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=master)
 
-[Mongoid](https://github.com/plataformatec/mongoid) plugin for [ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations)
+[Mongoid](https://docs.mongodb.com/ruby-driver/master/mongoid/#ruby-mongoid-tutorial) plugin for [ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations)
 
 ## Installation ##
 
@@ -36,7 +36,7 @@ The usage is the same as `ClientSideValidations`, just pass `validate: true` to 
 Per-input options are done with `:validate`
 
 ```ruby
-<%= book.input :name, validate: { presence: true, uniqueness: false }
+<%= book.input :name, validate: { presence: true, uniqueness: false } %>
 ```
 
 ## Authors ##
