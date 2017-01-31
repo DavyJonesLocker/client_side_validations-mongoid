@@ -1,5 +1,10 @@
 # Changelog
 
+## 8.2.0 (2017-01-31)
+
+* ClientSideValidations 9.0 compatibility
+* Include license in the gem
+
 ## 8.1.0 (2017-01-22)
 
 * ClientSideValidations 8.0 compatibility
