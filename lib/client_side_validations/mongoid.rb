@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'client_side_validations/active_model'
 
 %w(Presence Uniqueness).each do |validator|

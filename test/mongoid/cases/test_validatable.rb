@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'mongoid/cases/test_base'
 
 class Book3 < Book
