@@ -1,7 +1,9 @@
 # Changelog
 
-## 8.2.0.master / Unreleased
+## 8.3.0 / 2017-04-24
 
+* [ENHANCEMENT] Code cleanup
+* [ENHANCEMENT] Test against Ruby 2.2.7, 2.3.4 and 2.4.1
 * [ENHANCEMENT] Use Ruby 2.3's Frozen String Literal Pragma
 * [ENHANCEMENT] Follow Vandamme's changelog conventions
 
