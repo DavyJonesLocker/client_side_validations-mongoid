@@ -22,14 +22,14 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'client_side_validations', '>= 7.0', '< 10.0'
   spec.add_dependency 'mongoid', '~> 6.0'
 
-  spec.add_development_dependency 'appraisal', '~> 2.1'
+  spec.add_development_dependency 'appraisal', '~> 2.2'
   spec.add_development_dependency 'byebug', '~> 9.0'
-  spec.add_development_dependency 'coveralls', '~> 0.8.19'
+  spec.add_development_dependency 'coveralls', '~> 0.8.20'
   spec.add_development_dependency 'database_cleaner', '~> 1.5'
   spec.add_development_dependency 'm', '~> 1.5'
   spec.add_development_dependency 'minitest', '~> 5.10'
   spec.add_development_dependency 'mocha', '~> 1.2'
   spec.add_development_dependency 'rake', '~> 12.0'
-  spec.add_development_dependency 'rubocop', '~> 0.47.1'
-  spec.add_development_dependency 'simplecov', '~> 0.12.0'
+  spec.add_development_dependency 'rubocop', '~> 0.48.1'
+  spec.add_development_dependency 'simplecov', '~> 0.14.1'
 end
