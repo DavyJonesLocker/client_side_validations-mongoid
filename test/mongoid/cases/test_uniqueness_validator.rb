@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'mongoid/cases/test_base'
 
 module Mongoid
@@ -36,7 +37,7 @@ module Mongoid
       @book.stubs(:age).returns(30)
       @book.stubs(:author_email).returns('test@test.com')
       expected_hash = { message: 'is already taken', scope: { age: 30, author_email: 'test@test.com' } }
-      result_hash = UniquenessValidator.new(attributes: [:author_name], scope: [:age, :author_email]).client_side_hash(@book, :author_name)
+      result_hash = UniquenessValidator.new(attributes: [:author_name], scope: %i[age author_email]).client_side_hash(@book, :author_name)
       assert_equal expected_hash, result_hash
     end
 

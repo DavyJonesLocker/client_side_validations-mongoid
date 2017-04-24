@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'mongoid/cases/helper'
 
 module ClientSideValidations
