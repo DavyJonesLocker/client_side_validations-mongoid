@@ -4,6 +4,8 @@ rvm:
   - 2.2.8
   - 2.3.5
   - 2.4.2
+services:
+  - mongodb
 gemfile:
   - gemfiles/csv_7.0.gemfile
   - gemfiles/csv_8.0.gemfile
