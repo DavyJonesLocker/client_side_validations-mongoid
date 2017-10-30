@@ -1,6 +1,8 @@
 AllCops:
+  DisplayCopNames: true
   Exclude:
     - 'vendor/bundle/**/*'
+  TargetRubyVersion: 2.2
 
 Metrics/AbcSize:
   Max: 34.26 # TODO: Lower to 15
