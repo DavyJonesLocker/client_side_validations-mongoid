@@ -2,6 +2,6 @@
 
 module ClientSideValidations
   module Mongoid
-    VERSION = '8.4.0'.freeze
+    VERSION = '8.5.0'.freeze
   end
 end
