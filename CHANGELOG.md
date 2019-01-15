@@ -3,6 +3,7 @@
 ## 8.6.0 / 2019-01-16
 
 * [FEATURE] Add ClientSideValidations 12.0 compatibility
+* [FEATURE] Add Mongoid 7.0 compatibility
 * [ENHANCEMENT] Test against latest Ruby versions
 * [ENHANCEMENT] Update dependencies
 

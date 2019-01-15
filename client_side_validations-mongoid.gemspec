@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'client_side_validations', '>= 7.0', '< 13.0'
-  spec.add_dependency 'mongoid', '~> 6.0'
+  spec.add_dependency 'mongoid', '>= 6.0', '< 8'
 
   spec.add_development_dependency 'appraisal', '~> 2.2'
   spec.add_development_dependency 'byebug', '~> 10.0'
