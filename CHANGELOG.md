@@ -1,5 +1,11 @@
 # Changelog
 
+## 8.8.0 / 2019-04-29
+
+* [FEATURE] Add ClientSideValidations 14.0 compatibility
+* [ENHANCEMENT] Test against latest Ruby versions
+* [ENHANCEMENT] Update dependencies
+
 ## 8.7.0 / 2019-03-02
 
 * [FEATURE] Add ClientSideValidations 13.0 compatibility
