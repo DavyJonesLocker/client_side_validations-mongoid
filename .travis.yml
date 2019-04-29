@@ -16,5 +16,6 @@ gemfile:
   - gemfiles/csv_11.0.gemfile
   - gemfiles/csv_12.0.gemfile
   - gemfiles/csv_13.0.gemfile
+  - gemfiles/csv_14.0.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile

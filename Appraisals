@@ -28,6 +28,10 @@ appraise 'csv-13.0' do
   gem 'client_side_validations', '~> 13.0'
 end
 
+appraise 'csv-14.0' do
+  gem 'client_side_validations', '~> 14.0'
+end
+
 appraise 'mongoid-6.0' do
   gem 'mongoid', '~> 6.0'
 end
