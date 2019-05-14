@@ -1,6 +1,6 @@
 # ClientSideValidations-Mongoid #
 
-[![Gem Version](https://badge.fury.io/rb/client_side_validations-mongoid.svg)](http://badge.fury.io/rb/client_side_validations-mongoid)
+[![Gem Version](https://badge.fury.io/rb/client_side_validations-mongoid.svg)](https://badge.fury.io/rb/client_side_validations-mongoid)
 [![Build Status](https://secure.travis-ci.org/DavyJonesLocker/client_side_validations-mongoid.svg?branch=master)](https://travis-ci.org/DavyJonesLocker/client_side_validations-mongoid)
 [![Dependency Status](https://gemnasium.com/DavyJonesLocker/client_side_validations-mongoid.svg)](https://gemnasium.com/DavyJonesLocker/client_side_validations-mongoid)
 [![Code Climate](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/badges/gpa.svg)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid)
@@ -49,7 +49,7 @@ Per-input options are done with `:validate`
 
 ## Versioning ##
 
-This gem follows [Semantic Versioning](http://semver.org)
+This gem follows [Semantic Versioning](https://semver.org)
 
 ## Want to help? ##
 
@@ -63,4 +63,4 @@ on how to properly submit issues and pull requests.
 
 [@dockyard](https://twitter.com/dockyard)
 
-[Licensed under the MIT license](http://opensource.org/licenses/mit-license.php)
+[Licensed under the MIT license](https://opensource.org/licenses/mit-license.php)
