@@ -8,13 +8,6 @@ rvm:
 services:
   - mongodb
 gemfile:
-  - gemfiles/csv_7.0.gemfile
-  - gemfiles/csv_8.0.gemfile
-  - gemfiles/csv_9.0.gemfile
-  - gemfiles/csv_10.0.gemfile
-  - gemfiles/csv_11.0.gemfile
-  - gemfiles/csv_12.0.gemfile
-  - gemfiles/csv_13.0.gemfile
-  - gemfiles/csv_14.0.gemfile
+  - gemfiles/csv_15.0.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile
