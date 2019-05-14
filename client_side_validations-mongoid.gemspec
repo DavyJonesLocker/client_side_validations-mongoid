@@ -20,6 +20,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z -- {CHANGELOG.md,LICENSE.md,README.md,lib}`.split("\x0")
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '~> 2.3'
+
   spec.add_dependency 'client_side_validations', '~> 15.0'
   spec.add_dependency 'mongoid', '>= 6.0', '< 8'
 
@@ -31,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest', '~> 5.11'
   spec.add_development_dependency 'mocha', '~> 1.8'
   spec.add_development_dependency 'rake', '~> 12.3'
-  spec.add_development_dependency 'rubocop', '~> 0.67.2'
+  spec.add_development_dependency 'rubocop', '~> 0.69.0'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.3'
   spec.add_development_dependency 'simplecov', '~> 0.16.1'
 end
