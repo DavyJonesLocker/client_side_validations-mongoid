@@ -1,6 +1,6 @@
 # Changelog
 
-## 9.0.0 / 2019-05-14
+## 9.0.0 / 2019-05-16
 
 * [FEATURE] Add ClientSideValidations 15.0 compatibility
 * [FEATURE] Drop Ruby 2.2 support
