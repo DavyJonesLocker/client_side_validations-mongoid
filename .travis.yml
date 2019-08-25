@@ -8,5 +8,6 @@ services:
   - mongodb
 gemfile:
   - gemfiles/csv_15.0.gemfile
+  - gemfiles/csv_16.0.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile

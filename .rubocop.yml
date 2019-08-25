@@ -1,5 +1,6 @@
 require:
   - rubocop-performance
+  - rubocop-rails
 
 AllCops:
   DisplayCopNames: true
@@ -34,9 +35,6 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Exclude:
     - 'test/**/*'
-
-Rails:
-  Enabled: true
 
 Style/Documentation:
   Enabled: false

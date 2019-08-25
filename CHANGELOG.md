@@ -1,5 +1,10 @@
 # Changelog
 
+## 9.1.0 / 2019-08-25
+
+* [FEATURE] Add ClientSideValidations 16.0 compatibility
+* [ENHANCEMENT] Update dependencies
+
 ## 9.0.0 / 2019-05-16
 
 * [FEATURE] Add ClientSideValidations 15.0 compatibility
