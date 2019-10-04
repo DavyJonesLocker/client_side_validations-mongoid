@@ -2,7 +2,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/client_side_validations-mongoid.svg)](https://badge.fury.io/rb/client_side_validations-mongoid)
 [![Build Status](https://secure.travis-ci.org/DavyJonesLocker/client_side_validations-mongoid.svg?branch=master)](https://travis-ci.org/DavyJonesLocker/client_side_validations-mongoid)
-[![Dependency Status](https://gemnasium.com/DavyJonesLocker/client_side_validations-mongoid.svg)](https://gemnasium.com/DavyJonesLocker/client_side_validations-mongoid)
 [![Code Climate](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/badges/gpa.svg)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid)
 [![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=master)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=master)
 
