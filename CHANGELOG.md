@@ -1,8 +1,9 @@
 # Changelog
 
-## 9.1.0 / 2019-08-25
+## 9.1.0 / 2019-10-12
 
 * [FEATURE] Add ClientSideValidations 16.0 compatibility
+* [ENHANCEMENT] Test against latest Ruby versions
 * [ENHANCEMENT] Update dependencies
 
 ## 9.0.0 / 2019-05-16
