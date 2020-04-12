@@ -1,9 +1,11 @@
 language: ruby
 rvm:
   - 2.3.8
-  - 2.4.9
-  - 2.5.7
-  - 2.6.5
+  - 2.4.10
+  - 2.5.8
+  - 2.6.6
+  - 2.7.1
+  - ruby-head
 services:
   - mongodb
 gemfile:
@@ -11,3 +13,7 @@ gemfile:
   - gemfiles/csv_16.0.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+  fast_finish: true
