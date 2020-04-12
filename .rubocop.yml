@@ -8,6 +8,15 @@ AllCops:
     - 'vendor/bundle/**/*'
   TargetRubyVersion: 2.3
 
+Layout/LineLength:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
 Metrics/AbcSize:
   Max: 34.26 # TODO: Lower to 15
 
@@ -24,9 +33,6 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Max: 7 # TODO: Lower to 6
 
-Metrics/LineLength:
-  Enabled: false
-
 Metrics/MethodLength:
   Max: 14
   Exclude:
@@ -38,6 +44,15 @@ Metrics/ModuleLength:
 
 Style/Documentation:
   Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/IfUnlessModifier:
   Enabled: false
