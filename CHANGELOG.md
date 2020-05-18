@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.0.0 / 2020-05-18
+
+* [FEATURE] Add ClientSideValidations 17.0 compatibility
+* [ENHANCEMENT] Update dependencies
+* [ENHANCEMENT] Test against CSV and Mongoid edge
+
 ## 9.2.0 / 2020-04-12
 
 * [ENHANCEMENT] Test against latest Ruby versions

@@ -1,19 +1,32 @@
+os: linux
+dist: bionic
 language: ruby
+
 rvm:
-  - 2.3.8
   - 2.4.10
   - 2.5.8
   - 2.6.6
   - 2.7.1
   - ruby-head
+
 services:
   - mongodb
+
 gemfile:
   - gemfiles/csv_15.0.gemfile
   - gemfiles/csv_16.0.gemfile
+  - gemfiles/csv_17.0.gemfile
+  - gemfiles/csv_edge.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile
-matrix:
+  - gemfiles/mongoid_edge.gemfile
+
+cache:
+  bundler: true
+
+jobs:
   allow_failures:
     - rvm: ruby-head
+    - gemfile: gemfiles/csv_edge.gemfile
+    - gemfile: gemfiles/mongoid_edge.gemfile
   fast_finish: true

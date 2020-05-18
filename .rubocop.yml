@@ -3,22 +3,23 @@ require:
   - rubocop-rails
 
 AllCops:
-  DisplayCopNames: true
+  TargetRailsVersion: 5.0
+  TargetRubyVersion: 2.4
+  NewCops: enable
   Exclude:
+    - 'gemfiles/vendor/bundle/**/*'
+    - 'node_modules/**/*'
     - 'vendor/bundle/**/*'
-  TargetRubyVersion: 2.3
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
 
 Layout/LineLength:
   Enabled: false
 
-Lint/RaiseException:
-  Enabled: true
-
-Lint/StructNewOverride:
-  Enabled: true
-
 Metrics/AbcSize:
-  Max: 34.26 # TODO: Lower to 15
+  Max: 33.5
 
 Metrics/BlockLength:
   Exclude:
@@ -42,17 +43,11 @@ Metrics/ModuleLength:
   Exclude:
     - 'test/**/*'
 
-Style/Documentation:
+Rails/RakeEnvironment:
   Enabled: false
 
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
+Style/Documentation:
+  Enabled: false
 
 Style/IfUnlessModifier:
   Enabled: false

@@ -20,7 +20,7 @@ module Mongoid
           uniqueness: [{ message: 'is already taken' }]
         }, author_name: {
           uniqueness: [{ message: 'is already taken' }],
-          presence: [{ message: "can't be blank" }]
+          presence:   [{ message: "can't be blank" }]
         }
       }
 
