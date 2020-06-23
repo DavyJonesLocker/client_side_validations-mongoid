@@ -3,6 +3,7 @@
 module ClientSideValidations
   module Mongoid
     module Uniqueness
+      # rubocop:disable Metrics/CyclomaticComplexity
       def client_side_hash(model, attribute, _force = nil)
         hash = {}
         hash[:message] = model.errors.generate_message(attribute, message_type, options.except(:scope))
@@ -21,6 +22,7 @@ module ClientSideValidations
 
         hash
       end
+      # rubocop:enable Metrics/CyclomaticComplexity
 
       private
 

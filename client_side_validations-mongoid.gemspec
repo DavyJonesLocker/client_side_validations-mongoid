@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'client_side_validations', '>= 15.0', '< 18.0'
   spec.add_dependency 'mongoid', '>= 6.0', '< 8'
 
-  spec.add_development_dependency 'appraisal', '~> 2.2'
+  spec.add_development_dependency 'appraisal', '~> 2.3'
   spec.add_development_dependency 'byebug', '~> 11.1'
   spec.add_development_dependency 'coveralls_reborn', '~> 0.16.0'
   spec.add_development_dependency 'database_cleaner', '~> 1.7'
@@ -36,8 +36,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest', '~> 5.14'
   spec.add_development_dependency 'mocha', '~> 1.11'
   spec.add_development_dependency 'rake', '~> 13.0'
-  spec.add_development_dependency 'rubocop', '~> 0.85.0'
-  spec.add_development_dependency 'rubocop-performance', '~> 1.5'
-  spec.add_development_dependency 'rubocop-rails', '~> 2.5'
+  spec.add_development_dependency 'rubocop', '~> 0.86.0'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.6'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.6'
   spec.add_development_dependency 'simplecov', '~> 0.18.5'
 end
