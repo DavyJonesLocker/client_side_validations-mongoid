@@ -19,7 +19,7 @@ Layout/LineLength:
   Enabled: false
 
 Metrics/AbcSize:
-  Max: 33.5
+  Max: 39.86
 
 Metrics/BlockLength:
   Exclude:
