@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.1.0 / 2020-10-10
+
+* [FEATURE] Allow Ruby 3.0.0
+* [ENHANCEMENT] Test against latest Ruby 2.7.2
+* [ENHANCEMENT] Update development dependencies
+
 ## 10.0.0 / 2020-05-18
 
 * [FEATURE] Add ClientSideValidations 17.0 compatibility
