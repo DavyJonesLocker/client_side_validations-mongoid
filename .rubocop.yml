@@ -1,6 +1,8 @@
 require:
+  - rubocop-minitest
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rake
 
 AllCops:
   TargetRailsVersion: 5.0
