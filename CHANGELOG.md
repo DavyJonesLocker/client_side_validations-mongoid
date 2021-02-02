@@ -1,5 +1,10 @@
 # Changelog
 
+## main / unreleased
+
+* [ENHANCEMENT] Default branch is now `main` **POSSIBLE BREAKING CHANGE!**
+* [ENHANCEMENT] Update development dependencies
+
 ## 10.1.0 / 2020-10-10
 
 * [FEATURE] Allow Ruby 3.0.0
