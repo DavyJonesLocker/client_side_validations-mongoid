@@ -2,9 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/client_side_validations-mongoid.svg)](https://badge.fury.io/rb/client_side_validations-mongoid)
 [![SemVer](https://api.dependabot.com/badges/compatibility_score?dependency-name=client_side_validations-mongoid&package-manager=bundler&version-scheme=semver)](https://dependabot.com/compatibility-score.html?dependency-name=client_side_validations-mongoid&package-manager=bundler&version-scheme=semver)
-[![Build Status](https://secure.travis-ci.org/DavyJonesLocker/client_side_validations-mongoid.svg?branch=master)](https://travis-ci.org/DavyJonesLocker/client_side_validations-mongoid)
+[![Build Status](https://secure.travis-ci.org/DavyJonesLocker/client_side_validations-mongoid.svg?branch=main)](https://travis-ci.org/DavyJonesLocker/client_side_validations-mongoid)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4f8300006c02f7f4aa6d/maintainability)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/maintainability)
-[![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=master)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=master)
+[![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=main)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=main)
 
 [Mongoid](https://docs.mongodb.com/ruby-driver/master/mongoid/#ruby-mongoid-tutorial) plugin for [ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations)
 
@@ -54,7 +54,7 @@ This gem follows [Semantic Versioning](https://semver.org)
 ## Want to help? ##
 
 Please do! We are always looking to improve this gem. Please see our
-[Contribution Guidelines](https://github.com/DavyJonesLocker/client_side_validations-mongoid/blob/master/CONTRIBUTING.md)
+[Contribution Guidelines](https://github.com/DavyJonesLocker/client_side_validations-mongoid/blob/main/CONTRIBUTING.md)
 on how to properly submit issues and pull requests.
 
 ## Legal ##
