@@ -1,6 +1,6 @@
 # Changelog
 
-## main / unreleased
+## 11.0.0 / 2021-02-07
 
 * [ENHANCEMENT] Default branch is now `main` **POSSIBLE BREAKING CHANGE!**
 * [ENHANCEMENT] Update development dependencies
