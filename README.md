@@ -6,7 +6,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4f8300006c02f7f4aa6d/maintainability)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/maintainability)
 [![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=main)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=main)
 
-[Mongoid](https://docs.mongodb.com/ruby-driver/master/mongoid/#ruby-mongoid-tutorial) plugin for [ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations)
+[Mongoid](https://docs.mongodb.com/mongoid/master/#ruby-mongoid-tutorial) plugin for [ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations)
 
 ## Installation ##
 
@@ -21,7 +21,7 @@ gem 'client_side_validations-mongoid'
 Order matters here. `Mongoid` and `ClientSideValidations` need to be
 required **before** `ClientSideValidations-Mongoid`.
 
-[Follow the remaining installation instructions for ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations/blob/master/README.md)
+[Follow the remaining installation instructions for ClientSideValidations](https://github.com/DavyJonesLocker/client_side_validations/blob/main/README.md)
 
 ## Usage ##
 

@@ -1,5 +1,5 @@
 os: linux
-dist: bionic
+dist: focal
 language: ruby
 
 rvm:
@@ -7,6 +7,7 @@ rvm:
   - 2.5.8
   - 2.6.6
   - 2.7.2
+  - 3.0.0
   - ruby-head
 
 services:
@@ -16,6 +17,7 @@ gemfile:
   - gemfiles/csv_15.0.gemfile
   - gemfiles/csv_16.0.gemfile
   - gemfiles/csv_17.0.gemfile
+  - gemfiles/csv_18.0.gemfile
   - gemfiles/csv_edge.gemfile
   - gemfiles/mongoid_6.0.gemfile
   - gemfiles/mongoid_7.0.gemfile
@@ -29,4 +31,13 @@ jobs:
     - rvm: ruby-head
     - gemfile: gemfiles/csv_edge.gemfile
     - gemfile: gemfiles/mongoid_edge.gemfile
+  exclude:
+    - rvm: 3.0.0
+      gemfile: gemfiles/csv_15.0.gemfile
+    - rvm: 3.0.0
+      gemfile: gemfiles/csv_16.0.gemfile
+    - rvm: ruby-head
+      gemfile: gemfiles/csv_15.0.gemfile
+    - rvm: ruby-head
+      gemfile: gemfiles/csv_16.0.gemfile
   fast_finish: true

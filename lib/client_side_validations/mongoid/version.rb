@@ -2,6 +2,6 @@
 
 module ClientSideValidations
   module Mongoid
-    VERSION = '11.0.0'
+    VERSION = '11.1.0'
   end
 end

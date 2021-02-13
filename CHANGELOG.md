@@ -1,5 +1,10 @@
 # Changelog
 
+## 11.1.0 / 2021-02-07
+
+* Add CSV 18.0 compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 11.0.0 / 2021-02-07
 
 * [ENHANCEMENT] Default branch is now `main` **POSSIBLE BREAKING CHANGE!**
