@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'appraisal', '~> 2.3'
   spec.add_development_dependency 'byebug', '~> 11.1'
-  spec.add_development_dependency 'coveralls_reborn', '~> 0.20.0'
+  spec.add_development_dependency 'coveralls_reborn', '~> 0.21.0'
   spec.add_development_dependency 'database_cleaner-mongoid', '~> 2.0'
   spec.add_development_dependency 'm', '~> 1.5'
   spec.add_development_dependency 'minitest', '~> 5.14'
