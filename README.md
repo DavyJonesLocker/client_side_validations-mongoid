@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/client_side_validations-mongoid.svg)](https://badge.fury.io/rb/client_side_validations-mongoid)
 [![SemVer](https://api.dependabot.com/badges/compatibility_score?dependency-name=client_side_validations-mongoid&package-manager=bundler&version-scheme=semver)](https://dependabot.com/compatibility-score.html?dependency-name=client_side_validations-mongoid&package-manager=bundler&version-scheme=semver)
-[![Build Status](https://secure.travis-ci.org/DavyJonesLocker/client_side_validations-mongoid.svg?branch=main)](https://travis-ci.org/DavyJonesLocker/client_side_validations-mongoid)
+[![Build Status](https://github.com/DavyJonesLocker/client_side_validations-mongoid/actions/workflows/ruby.yml/badge.svg)](https://github.com/DavyJonesLocker/client_side_validations-mongoid/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4f8300006c02f7f4aa6d/maintainability)](https://codeclimate.com/github/DavyJonesLocker/client_side_validations-mongoid/maintainability)
 [![Coverage Status](https://coveralls.io/repos/DavyJonesLocker/client_side_validations-mongoid/badge.svg?branch=main)](https://coveralls.io/r/DavyJonesLocker/client_side_validations-mongoid?branch=main)
 
@@ -59,7 +59,7 @@ on how to properly submit issues and pull requests.
 
 ## Legal ##
 
-[DockYard](https://dockyard.com/), LLC &copy; 2012-2020
+[DockYard](https://dockyard.com/), LLC &copy; 2012-2021
 
 [@dockyard](https://twitter.com/dockyard)
 

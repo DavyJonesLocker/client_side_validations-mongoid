@@ -1,0 +1,94 @@
+name: Ruby tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    services:
+      mongodb:
+        image: mongo
+        ports: ['27017:27017']
+
+    strategy:
+      matrix:
+        ruby-version: ['2.5', '2.6', '2.7', '3.0']
+        gemfile: [ csv_19.0, mongoid_7.0 ]
+        experimental: [false]
+
+        include:
+          - ruby-version: 'head'
+            gemfile: csv_19.0
+            experimental: true
+          - ruby-version: 'head'
+            gemfile: mongoid_edge
+            experimental: true
+          - ruby-version: '2.5'
+            gemfile: csv_edge
+            experimental: true
+          - ruby-version: '2.6'
+            gemfile: csv_edge
+            experimental: true
+          - ruby-version: '2.7'
+            gemfile: csv_edge
+            experimental: true
+          - ruby-version: '3.0'
+            gemfile: csv_edge
+            experimental: true
+          - ruby-version: 'head'
+            gemfile: csv_edge
+            experimental: true
+          - ruby-version: '2.5'
+            gemfile: mongoid_edge
+            experimental: true
+          - ruby-version: '2.6'
+            gemfile: mongoid_edge
+            experimental: true
+          - ruby-version: '2.7'
+            gemfile: mongoid_edge
+            experimental: true
+          - ruby-version: '3.0'
+            gemfile: mongoid_edge
+            experimental: true
+          - ruby-version: 'head'
+            gemfile: mongoid_edge
+            experimental: true
+
+    env:
+      BUNDLE_GEMFILE: gemfiles/${{ matrix.gemfile }}.gemfile
+
+    continue-on-error: ${{ matrix.experimental }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nanasess/setup-chromedriver@v1.0.1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    - name: Run tests
+      run: bundle exec rake test:ruby
+    - name: Coveralls Parallel
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        flag-name: run-${{ matrix.ruby-version }}
+        parallel: true
+
+  coverage:
+    name: Coverage
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        parallel-finished: true

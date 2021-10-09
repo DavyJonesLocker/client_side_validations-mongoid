@@ -1,8 +1,17 @@
 # Changelog
 
+## 12.0.0 / 2021-10-09
+
+* [FEATURE] Add CSV 19.0 compatibility
+* [FEATURE] Drop CSV < 19.0 compatibility
+* [FEATURE] Drop Ruby < 2.5 compatibility
+* [FEATURE] Drop Mongoid < 7 compatibility
+* [ENHANCEMENT] Update development dependencies
+* [ENHANCEMENT] Move CI to GitHub Actions
+
 ## 11.1.0 / 2021-02-07
 
-* Add CSV 18.0 compatibility
+* [FEATURE] Add CSV 18.0 compatibility
 * [ENHANCEMENT] Update development dependencies
 
 ## 11.0.0 / 2021-02-07
