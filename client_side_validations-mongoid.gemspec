@@ -23,18 +23,18 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.platform              = Gem::Platform::RUBY
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 2.5'
 
-  spec.add_dependency 'client_side_validations', '>= 15.0', '< 19.0'
-  spec.add_dependency 'mongoid', '>= 6.0', '< 8'
+  spec.add_dependency 'client_side_validations', '~> 19.0'
+  spec.add_dependency 'mongoid', '>= 7.0', '< 8'
 
-  spec.add_development_dependency 'appraisal', '~> 2.3'
+  spec.add_development_dependency 'appraisal', '~> 2.4'
   spec.add_development_dependency 'byebug', '~> 11.1'
-  spec.add_development_dependency 'coveralls_reborn', '~> 0.21.0'
   spec.add_development_dependency 'database_cleaner-mongoid', '~> 2.0'
-  spec.add_development_dependency 'm', '~> 1.5'
+  spec.add_development_dependency 'm', '~> 1.6'
   spec.add_development_dependency 'minitest', '~> 5.14'
-  spec.add_development_dependency 'mocha', '~> 1.12'
+  spec.add_development_dependency 'mocha', '~> 1.13'
   spec.add_development_dependency 'rake', '~> 13.0'
-  spec.add_development_dependency 'simplecov', '>= 0.18.5', '< 0.22'
+  spec.add_development_dependency 'simplecov', '~> 0.21.2'
+  spec.add_development_dependency 'simplecov-lcov', '~> 0.8.0'
 end
