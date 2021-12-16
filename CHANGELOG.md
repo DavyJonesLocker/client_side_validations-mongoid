@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.1.0 / 2021-12-16
+
+* [FEATURE] Add CSV 20.0 compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 12.0.0 / 2021-10-09
 
 * [FEATURE] Add CSV 19.0 compatibility
