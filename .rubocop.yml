@@ -5,7 +5,8 @@ require:
   - rubocop-rake
 
 AllCops:
-  TargetRailsVersion: 5.0
+  TargetRailsVersion: 5.2
+  TargetRubyVersion: 2.6
   NewCops: enable
   Exclude:
     - 'gemfiles/**/*'
