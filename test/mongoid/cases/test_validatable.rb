@@ -17,9 +17,9 @@ module Mongoid
 
       expected_hash = {
         author_email: {
-          uniqueness: [{ message: 'is already taken' }]
+          uniqueness: [{ message: 'has already been taken' }]
         }, author_name: {
-          uniqueness: [{ message: 'is already taken' }],
+          uniqueness: [{ message: 'has already been taken' }],
           presence:   [{ message: "can't be blank" }]
         }
       }

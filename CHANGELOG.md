@@ -1,5 +1,12 @@
 # Changelog
 
+## 13.0.0 / 2022-09-18
+
+* [FEATURE] Drop Ruby 2.5 support
+* [FEATURE] Drop Client Side Validations < 21.0 compatibility
+* [FEATURE] Drop mongoid 7.x compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 12.1.0 / 2021-12-16
 
 * [FEATURE] Add CSV 20.0 compatibility
