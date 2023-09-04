@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.platform              = Gem::Platform::RUBY
   spec.required_ruby_version = '>= 2.6'
 
-  spec.add_dependency 'client_side_validations', '~> 21.0'
+  spec.add_dependency 'client_side_validations', '>= 21', '< 23'
   spec.add_dependency 'mongoid', '>= 8.0', '< 9'
 
   spec.add_development_dependency 'appraisal', '~> 2.4'
