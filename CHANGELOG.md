@@ -1,5 +1,11 @@
 # Changelog
 
+## 14.0.0 / 2023-09-06
+
+* [FEATURE] Drop Ruby 2.6 support
+* [FEATURE] Drop Client Side Validations < 22.0 compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 13.0.0 / 2022-09-18
 
 * [FEATURE] Drop Ruby 2.5 support

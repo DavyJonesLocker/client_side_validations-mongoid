@@ -17,26 +17,16 @@ Gem::Specification.new do |spec|
 
   spec.metadata['rubygems_mfa_required'] = 'true'
 
-  spec.metadata['bug_tracker_uri'] = 'https://github.com/DavyJonesLocker/client_side_validations-simple_form/issues'
-  spec.metadata['changelog_uri']   = 'https://github.com/DavyJonesLocker/client_side_validations-simple_form/blob/main/CHANGELOG.md'
-  spec.metadata['source_code_uri'] = 'https://github.com/DavyJonesLocker/client_side_validations-simple_form'
+  spec.metadata['bug_tracker_uri'] = 'https://github.com/DavyJonesLocker/client_side_validations-mongoid/issues'
+  spec.metadata['changelog_uri']   = 'https://github.com/DavyJonesLocker/client_side_validations-mongoid/blob/main/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = 'https://github.com/DavyJonesLocker/client_side_validations-mongoid'
 
-  spec.files         = `git ls-files -z -- {CHANGELOG.md,LICENSE.md,README.md,lib}`.split("\x0")
+  spec.files         = Dir.glob('{CHANGELOG.md,LICENSE.md,README.md,lib/**/*.rb}', File::FNM_DOTMATCH)
   spec.require_paths = ['lib']
 
   spec.platform              = Gem::Platform::RUBY
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 2.7'
 
-  spec.add_dependency 'client_side_validations', '~> 21.0'
+  spec.add_dependency 'client_side_validations', '~> 22.0'
   spec.add_dependency 'mongoid', '>= 8.0', '< 9'
-
-  spec.add_development_dependency 'appraisal', '~> 2.4'
-  spec.add_development_dependency 'byebug', '~> 11.1'
-  spec.add_development_dependency 'database_cleaner-mongoid', '~> 2.0'
-  spec.add_development_dependency 'm', '~> 1.6'
-  spec.add_development_dependency 'minitest', '~> 5.16'
-  spec.add_development_dependency 'mocha', '~> 2.0'
-  spec.add_development_dependency 'rake', '~> 13.0'
-  spec.add_development_dependency 'simplecov', '~> 0.22.0'
-  spec.add_development_dependency 'simplecov-lcov', '~> 0.8.0'
 end

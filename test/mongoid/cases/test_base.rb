@@ -3,7 +3,7 @@
 require 'mongoid/cases/helper'
 
 module ClientSideValidations
-  class MongoidTestBase < MiniTest::Test
+  class MongoidTestBase < Minitest::Test
     include ::Mongoid::Validatable
 
     def setup

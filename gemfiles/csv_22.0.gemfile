@@ -18,6 +18,6 @@ gem "rubocop-rake"
 gem "simplecov"
 gem "simplecov-lcov"
 gem "sinatra"
-gem "mongoid", "~> 8.0"
+gem "client_side_validations", "~> 22.0"
 
 gemspec path: "../"
