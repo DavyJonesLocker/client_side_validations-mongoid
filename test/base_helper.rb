@@ -21,15 +21,11 @@ SimpleCov.start 'rails' do
 end
 
 require 'rubygems'
-require 'bundler/setup'
 require 'minitest/autorun'
 require 'byebug'
 require 'mocha/minitest'
 require 'rails'
 
 require 'database_cleaner-mongoid'
-
-# MiniTest 4 support
-MiniTest::Test = MiniTest::Unit::TestCase unless defined?(MiniTest::Test)
 
 module ClientSideValidations; end
