@@ -1,5 +1,10 @@
 # Changelog
 
+## 14.1.0 / 2024-05-01
+
+* [FEATURE] Add Mongoid 9.0 compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 14.0.0 / 2023-09-06
 
 * [FEATURE] Drop Ruby 2.6 support
