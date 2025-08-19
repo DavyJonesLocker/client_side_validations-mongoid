@@ -1,4 +1,4 @@
-require:
+plugins:
   - rubocop-minitest
   - rubocop-packaging
   - rubocop-performance
@@ -9,10 +9,15 @@ AllCops:
   TargetRailsVersion: 6.1
   TargetRubyVersion: 2.7
   NewCops: enable
+  DisplayStyleGuide: true
+  ExtraDetails: true
   Exclude:
-    - 'gemfiles/**/*'
-    - 'node_modules/**/*'
-    - 'vendor/bundle/**/*'
+    - .git/**/*
+    - gemfiles/**/*
+    - node_modules/**/*
+    - test/generators/tmp/**/*
+    - tmp/**/*
+    - vendor/**/*
 
 Layout/HashAlignment:
   EnforcedColonStyle: table
@@ -35,7 +40,8 @@ Metrics/ClassLength:
     - 'test/**/*'
 
 Metrics/CyclomaticComplexity:
-  Max: 7 # TODO: Lower to 6
+  Exclude:
+    - 'test/**/*'
 
 Metrics/MethodLength:
   Max: 14
