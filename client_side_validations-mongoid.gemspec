@@ -25,8 +25,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.platform              = Gem::Platform::RUBY
-  spec.required_ruby_version = '>= 2.7'
+  spec.required_ruby_version = '>= 3.2'
 
-  spec.add_dependency 'client_side_validations', '>= 22.0'
-  spec.add_dependency 'mongoid', '>= 8.0'
+  spec.add_dependency 'client_side_validations', '>= 24.0'
+  spec.add_dependency 'mongoid', '>= 9.0'
 end

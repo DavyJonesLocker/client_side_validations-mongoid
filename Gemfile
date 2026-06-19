@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source 'https://rubygems.org', cooldown: 5
 
 gemspec
 
-gem 'appraisal'
+gem 'appraisal2'
 gem 'byebug'
 gem 'database_cleaner-mongoid'
 gem 'm'
