@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.0.0 / 2026-06-19
+
+* [FEATURE] Drop Ruby < 3.2 support
+* [FEATURE] Drop Client Side Validations < 24.0 compatibility
+* [FEATURE] Drop Mongoid < 9.0 compatibility
+* [ENHANCEMENT] Update development dependencies
+
 ## 14.1.0 / 2024-05-01
 
 * [FEATURE] Add Mongoid 9.0 compatibility
