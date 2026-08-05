@@ -16,7 +16,6 @@ gem "rubocop-performance"
 gem "rubocop-rails"
 gem "rubocop-rake"
 gem "simplecov"
-gem "simplecov-lcov"
 gem "sinatra"
 gem "client_side_validations", git: "https://github.com/DavyJonesLocker/client_side_validations.git", branch: "main"
 

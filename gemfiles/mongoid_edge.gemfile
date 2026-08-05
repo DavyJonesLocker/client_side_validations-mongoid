@@ -16,7 +16,6 @@ gem "rubocop-performance"
 gem "rubocop-rails"
 gem "rubocop-rake"
 gem "simplecov"
-gem "simplecov-lcov"
 gem "sinatra"
 gem "mongoid", git: "https://github.com/mongodb/mongoid.git", branch: "master"
 
