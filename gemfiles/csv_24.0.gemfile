@@ -2,6 +2,7 @@
 
 source "https://rubygems.org", :cooldown => 5
 
+gem "json", "< 3.0"
 gem "appraisal2"
 gem "byebug"
 gem "database_cleaner-mongoid"
